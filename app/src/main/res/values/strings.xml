@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gestion des Incidents</string>
+    <string name="welcome_message">Bienvenue dans l\'application</string>
+    <string name="description">Ajouter ou modifier un utilisateur</string>
+    <string name="read_more">Lire la suite</string>
+    <string name="reduce">Réduire</string>
+</resources>

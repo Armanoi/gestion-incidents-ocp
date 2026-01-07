@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back3">
+
+    <!-- Toolbar -->
+
+    <!-- Le reste du contenu -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:padding="8dp"
+        app:title="À propos de OCP"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Image f lfo9 -->
+            <ImageView
+                android:id="@+id/imageOcp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ocp5"
+                android:scaleType="centerCrop" />
+
+            <!-- Text dyal OCP -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textViewIntro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Le Groupe OCP est un leader mondial dans le domaine du phosphate et de ses dérivés... "
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Il occupe une place stratégique dans l’industrie en fournissant des solutions innovantes et durables destinées à répondre aux besoins croissants du secteur agricole. Son rôle va au-delà de la simple production, en contribuant activement à la sécurité alimentaire mondiale grâce à des fertilisants de haute qualité. Fort de son expertise et de son engagement envers le développement durable, OCP joue également un rôle important dans la préservation des ressources naturelles et dans le soutien aux communautés locales."
+                    android:visibility="gone"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:paddingTop="8dp" />
+
+                <TextView
+                    android:id="@+id/textViewToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lire la suite"
+                    android:textColor="#00796B"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ocp0"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="8dp" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ocp11"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="8dp" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ocp2"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/textV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OCP Khouribga est une partie essentielle du Groupe OCP, qui est reconnu comme l’un des principaux acteurs mondiaux dans l’industrie des phosphates et des dérivés. Située au cœur du bassin minier de Khouribga, cette zone abrite l'une des plus vastes réserves de phosphate naturel au monde, contribuant de manière significative à l'économie du Maroc.
+Le site de Khouribga est principalement dédié à l'extraction de phosphate brut, qui est ensuite acheminé vers d'autres sites pour transformation et valorisation. Une des infrastructures majeures liées à Khouribga est le Slurry Pipeline, un système innovant de transport hydraulique qui permet de relier directement les mines de Khouribga à la plateforme industrielle de Jorf Lasfar, située sur la côte atlantique. Cette solution permet un transport plus écologique et efficace du phosphate sous forme de boue.
+OCP Khouribga joue également un rôle clé dans le développement local en favorisant l’emploi, les projets sociaux, éducatifs et environnementaux dans la région. "
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

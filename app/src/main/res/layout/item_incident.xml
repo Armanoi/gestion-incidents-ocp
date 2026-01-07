@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <!-- Titre de la description stylisé -->
+        <TextView
+            android:id="@+id/tvIncidentDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description de l'incident"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Statut stylisé -->
+        <TextView
+            android:id="@+id/tvIncidentStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statut : En cours"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Conteneur des boutons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Bouton Supprimer stylisé -->
+            <Button
+                android:id="@+id/btnSupprimerIncident"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Supprimer"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:backgroundTint="#F10707"
+                android:layout_marginEnd="8dp"
+                android:elevation="6dp" />
+
+            <!-- Bouton Modifier stylisé -->
+            <Button
+                android:id="@+id/btnModifierIncident"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Modifier"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:backgroundTint="@color/blue_light"
+                android:elevation="6dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

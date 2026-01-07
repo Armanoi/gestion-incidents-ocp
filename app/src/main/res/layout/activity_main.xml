@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    android:gravity="center">
+
+    <!-- Image principale OCP -->
+    <ImageView
+        android:id="@+id/imageOcp"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ocpbg3" />
+
+    <!-- Texte Bienvenue stylé -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageOcp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="16dp"
+        android:text="Welcome To OCP"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_background"
+        android:elevation="14dp"
+        android:shadowColor="#222222"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="6" />
+
+    <!-- Conteneur pour les boutons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageOcp"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Bouton User -->
+        <Button
+            android:id="@+id/buttonUser"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="4dp"
+            android:text="User"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Bouton IT -->
+        <Button
+            android:id="@+id/buttonIT"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="4dp"
+            android:text="IT"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Bouton Admin -->
+        <Button
+            android:id="@+id/buttonAdmin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="4dp"
+            android:text="Admin"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resetPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonAdmin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/underline_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="Forgot Password?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textViewMoreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resetPasswordTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/underline_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="Learn More About OCP!"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

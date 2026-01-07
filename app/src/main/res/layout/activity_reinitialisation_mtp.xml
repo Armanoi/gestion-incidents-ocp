@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/back2">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ocpback"
+        android:layout_gravity="center"
+        android:elevation="8dp"
+        android:scaleType="fitCenter" />
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/titreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réinitialiser votre mot de passe"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_text_background"
+        android:elevation="6dp" />
+
+    <!-- Champ Matricule -->
+    <EditText
+        android:id="@+id/matriculeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Matricule"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp" />
+
+    <!-- Nouveau mot de passe -->
+    <EditText
+        android:id="@+id/nouveauMotDePasseEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nouveau mot de passe"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp" />
+
+    <!-- Confirmer mot de passe -->
+    <EditText
+        android:id="@+id/confirmerMotDePasseEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmez le mot de passe"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp" />
+
+    <!-- Bouton de confirmation -->
+    <Button
+        android:id="@+id/confirmerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONFIRMER"
+        android:backgroundTint="@color/green_light"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Lien de retour -->
+    <TextView
+        android:id="@+id/retourTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour à la première page"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/underline_text"
+        android:textColor="@android:color/holo_green_dark"
+        android:gravity="center" />
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?> <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/back4">
+    <!-- Toolbar contenant uniquement l'icône de retour -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:navigationIconTint="#4CAF50"
+        app:navigationIcon="@drawable/icproblem"
+        android:elevation="5dp" />
+
+
+    <!-- Contenu principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvBienvenueAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenue Admin"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:letterSpacing="0.1" />
+
+        <Button
+            android:id="@+id/btnGererIncidents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gérer les incidents"
+            android:backgroundTint="@color/green_light"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnGererIT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gérer les IT"
+            android:backgroundTint="@color/green_light"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnGererUtilisateurs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gérer les utilisateurs"
+            android:backgroundTint="@color/green_light"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
